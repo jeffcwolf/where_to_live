@@ -1,0 +1,13 @@
+<h1>List of Cities (<%= @cities.count %>)</h1>
+
+<a href="http://localhost:3000/cities/new">Add A New City</a></p>
+
+<ul>
+  <% @cities.each do |city| %>
+  <li>
+    <a href="http://localhost:3000/cities/<%= city.id %>"><%= city.name %>, <%= city.country %></a> |
+    <a href="http://localhost:3000/delete_city/<%= city.id %>"> Delete</a> |
+    <a href="http://localhost:3000/cities/<%= city.id %>/edit"> Edit</a>
+  </li>
+  <% end %>
+</ul>
