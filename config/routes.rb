@@ -8,7 +8,7 @@ get("/",                       { :controller => "cities", :action => "index" })
 #Routes to CREATE cities
 
 get("/cities/new",              { :controller => "cities", :action => "new_form" })
-get("/add_city/:id",            { :controller => "cities", :action => "create_row" })
+get("/add_city",            { :controller => "cities", :action => "create_row" })
 
 #Routes to READ cities
 
