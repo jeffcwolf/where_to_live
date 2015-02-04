@@ -35,4 +35,22 @@ class CitiesController < ApplicationController
 
   end
 
+  def edit_form
+
+    @city = City.find(params[:id])
+
+  end
+
+  def update_row
+
+    @city = City.find(params[:id])
+
+    @city.name = params["city"]
+    @city.country = params["country"]
+    @city.population = params["population"]
+
+    @city.save
+
+  end
+
 end

@@ -1,0 +1,28 @@
+<h1>Edit <%= @city.name %></h1>
+
+<form action="http://localhost:3000/update_city/<%= @city.id %>">
+
+  <div>
+    <label for="name">Name</label>
+    <input name="city" type="text" id="name" value="<%= @city.name %>" placeholder="Enter city name">
+  </div>
+
+  <br>
+  <div>
+    <label for="country">Country</label>
+    <input name="country" type="text" id="country" value="<%= @city.country %>" placeholder="Enter country name">
+  </div>
+
+  <br>
+  <div>
+    <label for="population">Population</label>
+    <input name="population" type="text" id="population" value="<%= @city.population %>" placeholder="Enter population as integer">
+  </div>
+
+  <br>
+  <div>
+    <input type="submit" value="Update city"> or <a href="index.html">Cancel</a>
+  </div>
+
+</form>
+
