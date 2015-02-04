@@ -1,0 +1,13 @@
+<h1>List of Countries (<%= @countries.count %>)</h1>
+
+<a href="http://localhost:3000/countries/new">Add A New Country</a>
+
+<ul>
+  <% @countries.each do |country| %>
+  <li>
+    <a href="http://localhost:3000/countries/<%= country.id %>"><%= country.name %> | Post-transfers Gini: <%= country.gini.round(3) %></a> |
+    <a href="http://localhost:3000/delete_country/<%= country.id %>"> Delete</a> |
+    <a href="http://localhost:3000/countries/<%= country.id %>/edit"> Edit</a>
+  </li>
+  <% end %>
+</ul>

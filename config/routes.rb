@@ -24,5 +24,13 @@ get("/update_city/:id",         { :controller => "cities", :action => "update_ro
 
 get("/delete_city/:id",         { :controller => "cities", :action => "destroy" })
 
+#Countries Resource
+#---------------
+
+#Routes to READ countries
+
+get("/countries",                  { :controller => "countries", :action => "index" })
+get("/countries/:id",              { :controller => "countries", :action => "show" })
+
 
 end
