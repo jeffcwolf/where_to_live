@@ -43,3 +43,7 @@ group :development, :test do
   gem 'spring'
 end
 
+#Starter Generator from RBetina
+
+gem 'starter_generators', :git => "git://github.com/rbetina/starter_generators.git", :branch => "panels"
+
